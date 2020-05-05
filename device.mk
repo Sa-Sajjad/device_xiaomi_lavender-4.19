@@ -448,6 +448,10 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # Shipping API.
 PRODUCT_SHIPPING_API_LEVEL := 28
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Shims
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim
