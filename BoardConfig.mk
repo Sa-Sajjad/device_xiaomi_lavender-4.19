@@ -174,9 +174,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
-# Power
-TARGET_USES_INTERACTION_BOOST := true
-
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
