@@ -26,6 +26,14 @@ persist.log.tag.ContrastColorUtil=S
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
+# Fling
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+ro.vendor.qti.cgroup_follow.enable=true 
+persist.vendor.qti.inputopts.enable=true 
+persist.vendor.qti.inputopts.movetouchslop=0.6 
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
