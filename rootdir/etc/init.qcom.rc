@@ -44,6 +44,10 @@ on early-init
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
+    # Workaround for cache
+    rm /data/resource-cache
+    rm /data/system/package_cache
+
 on init
     # Setup all the sub-system as related
     write /sys/bus/msm_subsys/devices/subsys0/restart_level RELATED
