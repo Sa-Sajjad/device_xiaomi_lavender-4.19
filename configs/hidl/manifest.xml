@@ -87,6 +87,16 @@
         <fqname>@1.0::IOffloadControl/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.perf</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.2::IPerf/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.servicetracker</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IServicetracker/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>com.dsi.ant</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IAnt/default</fqname>

@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 

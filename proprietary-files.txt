@@ -1374,9 +1374,6 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781
 vendor/lib64/libmlipay.so|c988ff04fcd90621cf46d219bdbc7eef341d1ce6
 vendor/lib64/libmlipay@1.1.so|7d07b19faa36c62babf39a41b2baf8de370d706c
 
-# Perf - from jasmine
-vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
-
 # Peripheral manager - from jasmine
 vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
 vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
