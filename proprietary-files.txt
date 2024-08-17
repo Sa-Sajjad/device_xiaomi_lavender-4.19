@@ -76,12 +76,6 @@ vendor/lib/libadm.so|2fd429c8066572cc49262fe0d452c78706197d54
 vendor/lib/libaudcal.so|5361c538d20634221c317851c33b0842ced93fca
 vendor/lib/libqtigef.so|977cbb704f6b2bae7f4e2f17b8c15146a6cacffb
 
-# Bluetooth - from S62Pro
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|07d96d0d3c4a500b14ea3c97e02b9eb5ee2bbc4d
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|c6be436d0f66aafd5be3aa51431d4fc02c50971d
-vendor/lib64/libbtnv.so|0c74a43550b939b9496b03b3285fa950cf560c48
-
 # Bluetooth (A2DP) - from S62Pro
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|156ec51ccb53f667605cf99422abf9357888b4b6
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|3097cb00777c2911cff40e323ce3c921923722d8
@@ -125,7 +119,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml|f76c894f3c6d5b6ed35113a088dc3174c9
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml|14d136e7fcc682311757d3edc0b9d3eaeba11815
 vendor/etc/cne/mwqem.conf|c51d3893b86ab89fae218f3a92c4f9c18ea401a8
 vendor/etc/cne/profileMwqem.xml|947917691684584b7e2ddf3588cd6f8e99f3804f
-vendor/etc/default-permissions/com.qualcomm.qti.cne.xml|c63c37d067e3009735fbc54d4603d43d7d6623e1
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
 vendor/lib64/libcne.so|646dbdf7f6990fb149fb9574f11792375ba1f64e
 vendor/lib64/libcneapiclient.so|b6479678e5b0e8b46d8df5eb8bd610aa17be00d0
