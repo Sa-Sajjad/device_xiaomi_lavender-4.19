@@ -16,3 +16,10 @@ type sysfs_headphonegain, sysfs_type, fs_type;
 type sysfs_micgain, sysfs_type, fs_type;
 type sysfs_earpiecegain, sysfs_type, fs_type;
 
+type vendor_adpl, file_type;
+type vendor_cnd, file_type;
+type vendor_hal_imsrtp, file_type;
+
+type vendor_sysfs_battery_supply, fs_type, sysfs_type;
+# useless but im not gonna remove these sepolicy
+type vendor_sysfs_scsi_target, fs_type, sysfs_type;
