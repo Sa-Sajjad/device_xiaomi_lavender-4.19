@@ -17,10 +17,4 @@
         "target_path":  "hardware/qcom/media",
         "revision":     "uvite-89xx-4.19"
     },
-    {
-        "remote":       "github",
-        "repository":   "AOSPA/android_hardware_xiaomi",
-        "target_path":  "hardware/xiaomi",
-        "revision":     "uvite"
-    }
 ]
