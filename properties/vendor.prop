@@ -144,6 +144,7 @@ debug.sf.latch_unsignaled=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=20
 debug.hwui.renderer=skiagl
+debug.hwui.use_buffer_age=false
 debug.renderengine.backend=skiaglthreaded
 persist.sys.sf.native_mode=1
 ro.hardware.egl=adreno
