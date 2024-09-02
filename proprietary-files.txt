@@ -1122,7 +1122,7 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so|abe51fdbdcbf3449012395cf0ade8aa8d267d
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|901da1e070e54e5757874473022df0161ac4818b
 vendor/bin/dpmQmiMgr|b1b5f8a54bc99a2e1cf4b36ba40e58bdf0580178
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|d9f1aa7f93b928f42499d613d20ccbc60f279097
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|d9f1aa7f93b928f42499d613d20ccbc60f279097
 vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
 # Dirac - from Xiaomi
@@ -1166,7 +1166,7 @@ system_ext/lib64/fm_helium.so|b2440e4feaae8a7f5e2269525520f9774b6962fc
 system_ext/lib64/libfm-hci.so|758c6e7cfafc964b5cd9d71806ec5455e0d78716
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so|5eaf6d5d67361ff6236c1ec4f5225c6185a904a6
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|05931b5d088bd7000b0b002ee650b0953e272cd7
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
+vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor|f6e23f902b7e15232b20af55161a24da93ffe25f
 
 # Fingerprint firmware
 vendor/firmware/fpctzappfingerprint.b00
@@ -1346,8 +1346,8 @@ vendor/lib/libI420colorconvert.so|c8e9a1fb33ae50f5b29c892c6edca2f7d9524af5
 vendor/lib/libOmxVideoDSMode.so|84c632ef31c4dd88c5e08f92ba02e3f29df09b35
 vendor/lib/libdsd2pcm.so|f9d2f26315764c27137bc375bb85b20fabe66ff9
 vendor/lib/libmm-color-convertor.so|063b3772fb4c5b85877c35a50e667540cde0c7d6
-vendor/lib/libmmosal.so|a2203f5be5dc1ee10d2f5da8f167a46acb0a660e
-vendor/lib64/libmmosal.so|595faff0767dc2bd0a344a98ab65a239bed14826
+vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor|a2203f5be5dc1ee10d2f5da8f167a46acb0a660e
+vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor|595faff0767dc2bd0a344a98ab65a239bed14826
 
 # Perf - from jasmine
 vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
