@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -41,7 +42,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 BUILD_BROKEN_OUTSIDE_INCLUDE_DIRS := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 SELINUX_IGNORE_NEVERALLOWS := true
-WITH_DEXPREOPT := false
+# WITH_DEXPREOPT := false
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -197,6 +198,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+BOARD_SEPOLICY_M4DEFS += \
+     sysfs_battery_supply=vendor_sysfs_battery_supply \
+     sysfs_usb_supply=vendor_sysfs_usb_supply
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-06-01
