@@ -1,2 +1,0 @@
-allow ims sysfs:file read;
-set_prop(ims, vendor_qcom_ims_prop)
