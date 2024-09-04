@@ -63,7 +63,10 @@ function blob_fixup() {
             ;;
         vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so)
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
-	    ;;
+	        ;;
+	    vendor/lib64/libwvhidl.so|vendor/lib64/mediadrm/libwvdrmengine.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+            ;;
     esac
 }
 

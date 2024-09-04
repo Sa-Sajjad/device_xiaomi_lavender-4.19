@@ -451,6 +451,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libcrypto-v33 \
     libcamera_sdm660_shim
 
 # Telephony
