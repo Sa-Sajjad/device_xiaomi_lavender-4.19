@@ -81,11 +81,6 @@
         <fqname>@1.0::IAnt/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.keymaster</name>
-        <transport>hwbinder</transport>
-        <fqname>@4.0::IKeymasterDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.goodix.hardware.interfaces.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>

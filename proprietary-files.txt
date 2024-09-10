@@ -1343,25 +1343,20 @@ vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 vendor/firmware/a540_gpmu.fw2
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|6e6249eb7df66b3941cc21d213fabde557daf76e
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|14819df15693c737fb2a51bf89fe826200286006
 
-# Keymaster - from jasmine
-vendor/lib/libkeymasterdeviceutils.so|bc2aac023d99ec9e423d2f769019d187c99a8afb
-vendor/lib/libkeymasterprovision.so|ae6bbb9fec083307336b6191194d5c48b5dfd3a5
-vendor/lib/libkeymasterutils.so|599755dde51af5289f1f2776651bb2f93eb8507e
-vendor/lib64/libkeymasterdeviceutils.so|763a02841eb133e698180e0cacf309450a4ce0e0
-vendor/lib64/libkeymasterprovision.so|f7e215595c2f7e62a6575b23a109b6b18556fc3b
-vendor/lib64/libkeymasterutils.so|679491d7b415f45469990380e4fd61e4bfbc445e
-
-# Keymaster QTI
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib/libqtikeymaster4.so
-vendor/lib64/libqtikeymaster4.so
+# Keystore - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|0e0aa56f9ad9b1832eeb39db82eed1f021d7e244
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|9816f37e7487295e29a19d05c4a3e6b7b0ec35ea
+vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service-default-qti.xml|478d11fc12dd7c6a85b543cf163bec217aea3148
+vendor/lib64/libkeymasterdeviceutils.so|15af23f261554c47b5f490f0fe68c15abe87cda8
+vendor/lib64/libkeymasterprovision.so|6d774511459d24cc7f814546296537a77d35c454
+vendor/lib64/libkeymasterutils.so|2392abef423c0610d9625670f1ff3063532e9bc1
+vendor/lib64/libqcbor.so|7da5294a577f5a71ede5b3804a026bf69bd025ee
+vendor/lib64/libqtikeymaster4.so|cb423cacf556d81b73542c15392a075ee2ab4def
 
 # Listen - from S62Pro RKQ1.210406.002
 vendor/lib/hw/sound_trigger.primary.sdm660.so|5464b9658c9b819e18f3ad6703471278521a79d1
