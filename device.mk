@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fingerprints
+PRODUCT_PACKAGES += \
+    com.fingerprints.extension@2.0.vendor
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 
