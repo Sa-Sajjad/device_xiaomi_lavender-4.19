@@ -15,8 +15,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # OrionOS stuff
-ORION_MAINTAINER := Sajjad
+ORION_MAINTAINER := Sã Śâjjãd
 ORION_MAINTAINER_LINK := https://t.me/sa_sajjadx
+ORION_BUILD_TYPE := OFFICIAL
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
