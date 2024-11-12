@@ -56,12 +56,15 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/bin/pm-service)
+            [ "$2" = "" ] && return 0
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
         vendor/lib/lib_lowlight.so)
+            [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
         vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so)
+            [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
 	        ;;
 	    vendor/lib64/libwvhidl.so|vendor/lib64/mediadrm/libwvdrmengine.so)
@@ -71,9 +74,15 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;    
+	    *)
+            return 1
+        ;;
     esac
 }
 
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
+}
 
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
