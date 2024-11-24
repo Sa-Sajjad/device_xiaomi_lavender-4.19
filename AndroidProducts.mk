@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/orion_lavender.mk
+    $(LOCAL_DIR)/lineage_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    orion_lavender-user \
-    orion_lavender-userdebug \
-    orion_lavender-eng
+    lineage_lavender-user \
+    lineage_lavender-userdebug \
+    lineage_lavender-eng
