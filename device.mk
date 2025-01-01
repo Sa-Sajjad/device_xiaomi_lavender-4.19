@@ -280,6 +280,9 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
 # OMX
+
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
 	libavservices_minijail.vendor \
