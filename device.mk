@@ -137,6 +137,9 @@ PRODUCT_PACKAGES += \
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Update
+AB_OTA_UPDATER := false
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
