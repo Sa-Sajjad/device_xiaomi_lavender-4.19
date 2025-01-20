@@ -76,8 +76,8 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
    $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml  \
    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
    hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml \
-   hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-   vendor/lineage/config/device_framework_matrix.xml
+   hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
+
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
@@ -91,6 +91,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lavender
 TARGET_RECOVERY_DEVICE_MODULES := libinit_lavender
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE := \
     androidboot.configfs=true \
     androidboot.hardware=qcom \
@@ -110,14 +111,14 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := vendor/lavender-perf_defconfig
+TARGET_KERNEL_CONFIG := lavender_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
 TARGET_KERNEL_VERSION := 4.19
 
 # Platform
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := sdm660
-OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
+# OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -196,7 +197,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # SELinux
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include device/voltage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
