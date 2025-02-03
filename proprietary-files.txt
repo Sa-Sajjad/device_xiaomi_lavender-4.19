@@ -1246,8 +1246,8 @@ vendor/lib/libadreno_utils.so|54eedfc81c3228ade708c4ebc8dd0cc25fcd46cf
 vendor/lib/libbccQTI.so|0be327b62b993d09953fc0758fbf19672d58d3ec
 vendor/lib/libc2d30_bltlib.so|3ff9baf59a1e1c56b91a0f509a2dfd36c9e96be2
 vendor/lib/libgsl.so;DISABLE_CHECKELF|82c39541f2486ed02ff7a8222deb402156957e5f
-vendor/lib/libllvm-glnext.so|017017256eda565d7c2fa1b8f2b0f5e720ddb321
-vendor/lib/libllvm-qcom.so|c7af1844b19258ad6eb822fa56d0ce5fd3df232b
+vendor/lib/libllvm-glnext.so;DISABLE_CHECKELF|017017256eda565d7c2fa1b8f2b0f5e720ddb321
+vendor/lib/libllvm-qcom.so;DISABLE_CHECKELF|c7af1844b19258ad6eb822fa56d0ce5fd3df232b
 vendor/lib/librs_adreno.so;DISABLE_CHECKELF|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
 vendor/lib/librs_adreno_sha1.so|687de9471eaa1dab7b8180c327f0025b715cdf7e
 vendor/lib64/egl/eglSubDriverAndroid.so|2f5f0f8dff2e5a52f5852a9dcdb844d348b934bc
@@ -1281,12 +1281,12 @@ vendor/lib/libsdmextension.so;DISABLE_CHECKELF|2fce25b72c288730e345d7241922c10fc
 # vendor/lib/libsdmutils.so;MODULE_SUFFIX=_vendor|3dfab74b5e3eb33725ef9bccd68d575e8dfb2bdd
 vendor/lib/libtinyxml2_1.so;DISABLE_CHECKELF|89e1b1af10209dbb8d341cd314750cc64fc33852
 vendor/lib64/libqseed3.so;DISABLE_CHECKELF|6779aaf96283e244122f4cc76cd3cb750ff14ed5
-vendor/lib64/libsdm-color.so|9c80ac4e059bff1c53814e9f5f71a5fbe38bce40
+vendor/lib64/libsdm-color.so;DISABLE_CHECKELF|9c80ac4e059bff1c53814e9f5f71a5fbe38bce40
 vendor/lib64/libsdm-diag.so;DISABLE_CHECKELF|35206a3a9b7ed56317511bb72f89fd380d848ca6
 vendor/lib64/libsdm-disp-vndapis.so;DISABLE_CHECKELF|a4e271a373b83b1e04afdbff63ab37154aead5f9
 vendor/lib64/libsdmextension.so;DISABLE_CHECKELF|fe6d0c574df498dd768f9d2e1d3fbc5c558883d0
 # vendor/lib64/libsdmutils.so;MODULE_SUFFIX=_vendor|14bf7060c16070c57d76441aa6bbe467597011e6
-vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
+vendor/lib64/libtinyxml2_1.so;DISABLE_CHECKELF|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 
 # Graphics (Vulkan) - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib/hw/vulkan.sdm660.so|404862c00279f222b1a9277bf773a96a605ba99b
