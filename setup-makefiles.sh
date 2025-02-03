@@ -63,6 +63,7 @@ function lib_to_package_fixup_vendor_variants() {
             libhdcpsrm | \
             libsdmutils | \
             libcpion | \
+            libril | \
             libwifi-hal-ctrl | \
             libdrmutils | \
             libwpa_client) ;;
