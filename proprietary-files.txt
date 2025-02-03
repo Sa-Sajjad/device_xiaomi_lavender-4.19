@@ -1278,14 +1278,14 @@ vendor/lib/libqseed3.so;DISABLE_CHECKELF|44f99b99b831227491e320a3098c8defe8df078
 vendor/lib/libsdm-color.so;DISABLE_CHECKELF|05e6eedb8f9656d9097a1c3cee09ceeef1025181
 vendor/lib/libsdm-diag.so;DISABLE_CHECKELF|f560622d31fa58c6b3ee2843d7485ddfd246d064
 vendor/lib/libsdmextension.so;DISABLE_CHECKELF|2fce25b72c288730e345d7241922c10fcfc0e96e
-vendor/lib/libsdmutils.so;MODULE_SUFFIX=_vendor|3dfab74b5e3eb33725ef9bccd68d575e8dfb2bdd
+# vendor/lib/libsdmutils.so;MODULE_SUFFIX=_vendor|3dfab74b5e3eb33725ef9bccd68d575e8dfb2bdd
 vendor/lib/libtinyxml2_1.so;DISABLE_CHECKELF|89e1b1af10209dbb8d341cd314750cc64fc33852
 vendor/lib64/libqseed3.so;DISABLE_CHECKELF|6779aaf96283e244122f4cc76cd3cb750ff14ed5
 vendor/lib64/libsdm-color.so|9c80ac4e059bff1c53814e9f5f71a5fbe38bce40
 vendor/lib64/libsdm-diag.so;DISABLE_CHECKELF|35206a3a9b7ed56317511bb72f89fd380d848ca6
 vendor/lib64/libsdm-disp-vndapis.so;DISABLE_CHECKELF|a4e271a373b83b1e04afdbff63ab37154aead5f9
 vendor/lib64/libsdmextension.so;DISABLE_CHECKELF|fe6d0c574df498dd768f9d2e1d3fbc5c558883d0
-vendor/lib64/libsdmutils.so;MODULE_SUFFIX=_vendor|14bf7060c16070c57d76441aa6bbe467597011e6
+# vendor/lib64/libsdmutils.so;MODULE_SUFFIX=_vendor|14bf7060c16070c57d76441aa6bbe467597011e6
 vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 
 # Graphics (Vulkan) - from LA.UM.8.2.1.r1-05600-sdm660

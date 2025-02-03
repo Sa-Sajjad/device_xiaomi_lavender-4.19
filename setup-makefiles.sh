@@ -61,6 +61,7 @@ function lib_to_package_fixup_vendor_variants() {
             liblocation_api | \
             libwfdmmservice | \
             libhdcpsrm | \
+            libsdmutils | \
             libcpion | \
             libwifi-hal-ctrl | \
             libdrmutils | \
