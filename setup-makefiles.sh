@@ -52,7 +52,6 @@ function lib_to_package_fixup_vendor_variants() {
             libgrallocutils | \
             libwfdaac_vendor | \
             libhidlbase-v32 | \
-            libsdmutils | \
             libnotifyaudiohal | \
             libgps.utils | \
             libmegface_32 | \
