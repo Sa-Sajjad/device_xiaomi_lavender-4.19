@@ -173,7 +173,7 @@ vendor/lib/libSNPE.so|66f23aae6d30b09121f06635c749d6ae47543359
 vendor/lib/libSonyIMX376C3RmscLibrary.so|b3138daf9b93c645b89b67d28c3f6fadfbbfdb42
 vendor/lib/libSonyIMX376KRmscLibrary.so|2f7792d51bf476352590b8643e43762f68cadeef
 vendor/lib/libVDClearShot.so|fe429e3ddac8f989d2c754b6a3da36ebe8b85060
-vendor/lib/libVDSuperPhotoAPI.so|913cf65475d0329b321c912d24c98abc428d5e55
+vendor/lib/libVDSuperPhotoAPI.so;DISABLE_CHECKELF|913cf65475d0329b321c912d24c98abc428d5e55
 vendor/lib/libXMFD_AgeGender.so|88654968974e4aba6c7b74346eb69ff543997047
 vendor/lib/lib_lowlight.so|0c994d585acd94928b50081aa5e91c70793583d8
 vendor/lib/libc++_shared.so|54a61595d6fee176af9aa65ff044746ed1446233
@@ -985,7 +985,7 @@ vendor/lib/libmmcamera2_cpp_module.so;DISABLE_CHECKELF|b2dc5f4a3290ed41291f1f010
 vendor/lib/libmmcamera2_frame_algorithm.so|72db2ba4edb151a13c6c29a87f861ddc5c3b8612
 vendor/lib/libmmcamera2_iface_modules.so|ebdce41f9a6ec103ae8e190f545d48f46247edf7
 vendor/lib/libmmcamera2_imglib_modules.so|11be7a4f14a9565003a66530e4d7e37931678d07
-vendor/lib/libmmcamera2_is.so|f5f3675c89798549c22bf8681251caadc92492ff
+vendor/lib/libmmcamera2_is.so;DISABLE_CHECKELF|f5f3675c89798549c22bf8681251caadc92492ff
 vendor/lib/libmmcamera2_isp_modules.so;DISABLE_CHECKELF|4aa8df86f5b7cc9458ed80440beaed3b19c7a6c7
 vendor/lib/libmmcamera2_mct.so;DISABLE_CHECKELF|1983bbf307628202bdfeaaebff81a59f698ef18d
 vendor/lib/libmmcamera2_mct_shimlayer.so|1c0dc05e9d4ee551212f9cff90cd2c99bb3d5e49
@@ -1099,10 +1099,10 @@ vendor/lib/libmmcamera_tuning.so|28364a5125194034584cb44e053272a9d70fa5b5
 vendor/lib/libmmcamera_tuning_lookup.so|e00c7abb7b72ceff77fbd73d7b38f3fa8fdb31ca
 
 # ConsumerIR (lirc) - from jason V12.0.1.0.PCHCNXM
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lirc.sdm660.so;FIX_SONAME|8c614f98e2a42b5ba9e148c01b3d69e7fb59ce1d
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lirc.sdm660.so;FIX_SONAME|2c60e2cfc2ded7335dcd3d294393e4c564d02621
 
 # ConsumerIR (spi) - from jasmine V11.0.28.0.QDIMIXM
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.spi.sdm660.so;FIX_SONAME|d1f275a91557dfab52e82906986c5094fe078722
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.spi.sdm660.so;FIX_SONAME|f086cf79cff5624554e3bfb67d44386b94578c4b
 
 # DPM - from S62Pro
 system_ext/bin/dpmd|4662a11c5331919cc08d541a298444ffce18cc1b
@@ -1128,7 +1128,7 @@ vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 # Dirac - from Xiaomi
 vendor/etc/diracmobile.config|88fa19095df9e256f0af510df266f749bf60e258
 vendor/etc/diracvdd.bin|b54270d4f44acc2bb2be8e1cdb3e54fb2c6be07b
-vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/soundfx/libdirac.so;DISABLE_CHECKELF|f63826a905b520fa524e4c1b147be7cf65240953
 vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
 
 
@@ -1193,8 +1193,8 @@ vendor/firmware/goodixfp.mdt
 # Fingerprint sensor
 vendor/bin/qfp-daemon
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so;DISABLE_CHECKELF
-vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME;DISABLE_CHECKELF
 vendor/lib64/com.fingerprints.extension@2.0.so;;MODULE_SUFFIX=_vendor
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
@@ -1347,7 +1347,7 @@ system_ext/lib64/libmmosal.so;DISABLE_CHECKELF|d0f37596108fb90b129edec4c6e8ba364
 vendor/lib/libI420colorconvert.so|c8e9a1fb33ae50f5b29c892c6edca2f7d9524af5
 vendor/lib/libOmxAacDec.so;DISABLE_CHECKELF|3bcfed25d66aab024faf8dbb9a06ce98270c24b6
 vendor/lib/libOmxAlacDec.so|183cda27aaf922689c557cd9a76b68938e1748c9
-vendor/lib/libOmxAlacDecSw;DISABLE_CHECKELF.so|ff4b38dbead17dcd0c9a045f109fa4e92ca2992a
+vendor/lib/libOmxAlacDecSw.so;DISABLE_CHECKELF|ff4b38dbead17dcd0c9a045f109fa4e92ca2992a
 vendor/lib/libOmxAmrDec.so|ebe524b6682f7a9460078a1aa2b986c2c3430b68
 vendor/lib/libOmxAmrwbplusDec.so|ac542cb28956ccab59f9491bacebc96f50a80309
 vendor/lib/libOmxApeDec.so|dcde109eb585c194fdd80c1fe2d1b28614cd68a8
@@ -1611,8 +1611,8 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/libwvhidl.so;DISABLE_CHECKELF|acf4870a0b10af74a40a4c6180f2c10a1706ddbd
 
 # Widevine - from lavender V12.0.1.0.QFGMIXM
-vendor/lib/liboemcrypto.so|ad286cf38f8b00a5c9b0b0f424e4a5bd1f47f046
-vendor/lib64/liboemcrypto.so|e44fa8bf9bed1541342390bf316c34fe9f29cc4e
+vendor/lib/liboemcrypto.so;DISABLE_CHECKELF|ad286cf38f8b00a5c9b0b0f424e4a5bd1f47f046
+vendor/lib64/liboemcrypto.so;DISABLE_CHECKELF|e44fa8bf9bed1541342390bf316c34fe9f29cc4e
 
 # Wifi
 vendor/bin/cnss-daemon
