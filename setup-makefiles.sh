@@ -17,8 +17,6 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ANDROID_ROOT="${MY_DIR}/../../.."
 
-export TARGET_ENABLE_CHECKELF=true
-
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
@@ -29,10 +27,10 @@ source "${HELPER}"
 function vendor_imports() {
     cat <<EOF >>"$1"
         "device/xiaomi/lavender",
+        "vendor/xiaomi/lavender",
         "hardware/qcom-caf/msm8998",
+        "hardware/xiaomi",
         "hardware/qcom-caf/wlan",
-        "vendor/qcom/opensource/commonsys/display",
-        "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/dataservices",
         "vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um",
         "vendor/qcom/opensource/display",
@@ -47,9 +45,18 @@ function lib_to_package_fixup_vendor_variants() {
     case "$1" in
             com.qualcomm.qti.dpm.api@1.0 | \
             vendor.qti.hardware.fm@1.0 | \
-            libmmosal.so)
+            libloc_core | \
+            liblocation_api | \
+            libgps.utils | \
+            libwpa_client | \
+            libdrmutils | \
+            libsdmutils | \
+            libmmosal)
             echo "${1}_vendor"
             ;;
+        libOmxCore | \
+            libwifi-hal-ctrl)
+            ;; # Android.mk only packages
         *)
             return 1
             ;;
@@ -68,7 +75,7 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 # Warning headers and guards
 write_headers
 
-write_makefiles "${MY_DIR}/proprietary-files.txt" true
+write_makefiles "${MY_DIR}/proprietary-files.txt"
 
 # Finish
 write_footers
